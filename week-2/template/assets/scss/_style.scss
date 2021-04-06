@@ -26,16 +26,6 @@ body {
     padding: 1rem;
 }
 
-.layout__row {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    .layout__column {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 .filter {
     @include border-default();
     @include border-radius(6px);
