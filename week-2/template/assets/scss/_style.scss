@@ -1,0 +1,100 @@
+body {
+    background: $white;
+    color: $lightblack;
+    font-family: "sut", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    text-align: left;
+}
+
+.backup__font {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $container_size;
+}
+
+.page__header {
+    background: $belizehole;
+    color: $clouds;
+    padding: 1rem;
+}
+
+.layout__row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    .layout__column {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.filter {
+    @include border-default();
+    @include border-radius(6px);
+    margin: 1rem auto;
+    padding: 1rem;
+    width: $block_size;
+    .filter__name {
+        margin: 0 0 1rem;
+    }
+    .filter__selector {
+        width: 100%;
+        height: 32px;
+    }
+}
+
+.product__list {
+    display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    margin: 0 0 1rem;
+}
+
+.product__card {
+    @include border-default();
+    @include border-radius(6px);
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    width: $block_size;
+    .product__card__image {
+        background: $clouds;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        width: 100%;
+    }
+    .product__card__body {
+        padding: 1rem;
+    }
+    .product__button {
+        background: $peterriver;
+        border: 0;
+        color: $white;
+        padding: 0.5rem;
+        width: 100%;
+        &:hover {
+            background: lighten($peterriver, 5%);
+            cursor: pointer;
+        }
+    }
+}
+
+.page__footer {
+    border-top: 1px solid $clouds;
+    padding: 1rem;
+}
+
+@media (max-width: 720px) {
+    .product__list {
+        flex-direction: column;
+    }
+}

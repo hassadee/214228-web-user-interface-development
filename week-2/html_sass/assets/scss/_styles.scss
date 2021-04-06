@@ -1,0 +1,4 @@
+.section-container {
+  background: $indigo;
+  @include border-radius(6px);
+}

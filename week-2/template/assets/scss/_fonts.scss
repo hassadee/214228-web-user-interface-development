@@ -1,0 +1,22 @@
+$path: "../fonts/";
+
+@font-face {
+    font-family: "sut";
+    src: url(#{$path}SUT_Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "sut";
+    src: url(#{$path}SUT_Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "sut";
+    src: url(#{$path}SUT_Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
